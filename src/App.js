@@ -3,11 +3,17 @@ import './App.css';
 import UserGreeting from './UserGreeting';
 
 function App() {
-  const sampleUsername = 'Kanique Cox';
+  const sampleUsername = 'Kanique Cox'
+  const greetingStyle = {
+		display: 'flex',
+		fontSize:'110px',
+		marginTop: '100px',
+    
+	}
 
   return (
-    <div >
-    <UserGreeting username={sampleUsername} />
+    <div>
+    <UserGreeting style={greetingStyle} username={sampleUsername} />
     </div>
   );
 }
